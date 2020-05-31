@@ -1,4 +1,4 @@
-package com.mkobit.libraryexample
+package com.swift.cisb
 
 import com.lesfurets.jenkins.unit.BasePipelineTest
 import org.junit.Before

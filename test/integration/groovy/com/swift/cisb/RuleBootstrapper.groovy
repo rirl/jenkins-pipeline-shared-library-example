@@ -1,4 +1,4 @@
-package com.mkobit.libraryexample
+package com.swift.cisb
 
 import com.mkobit.jenkins.pipelines.codegen.LocalLibraryRetriever
 import org.jenkinsci.plugins.workflow.libs.GlobalLibraries

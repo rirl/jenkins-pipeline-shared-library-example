@@ -1,4 +1,4 @@
-package com.mkobit.libraryexample
+package com.swift.cisb
 
 import hudson.model.BooleanParameterDefinition
 import hudson.model.BooleanParameterValue
@@ -28,7 +28,7 @@ class ExampleSrcSpockSpec extends Specification {
     given:
     WorkflowJob workflowJob = rule.createProject(WorkflowJob, 'project')
     workflowJob.definition = new CpsFlowDefinition('''
-        import com.mkobit.libraryexample.ExampleSrc
+        import com.swift.cisb.ExampleSrc
         
         final exampleSrc = new ExampleSrc(this)
         exampleSrc.sayHelloTo('Bob')
@@ -47,7 +47,7 @@ class ExampleSrcSpockSpec extends Specification {
     given:
     WorkflowJob workflowJob = rule.createProject(WorkflowJob, 'project')
     workflowJob.definition = new CpsFlowDefinition('''
-      import com.mkobit.libraryexample.ExampleSrc
+      import com.swift.cisb.ExampleSrc
       
       final exampleSrc = new ExampleSrc(this)
       echo "Numbers: ${exampleSrc.nonCpsDouble([1, 2])}"

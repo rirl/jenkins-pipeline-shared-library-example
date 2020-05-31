@@ -1,4 +1,4 @@
-package com.mkobit.libraryexample
+package com.swift.cisb
 
 import org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition
 import org.jenkinsci.plugins.workflow.job.WorkflowJob

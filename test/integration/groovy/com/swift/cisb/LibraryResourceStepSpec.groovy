@@ -1,4 +1,4 @@
-package com.mkobit.libraryexample
+package com.swift.cisb
 
 import hudson.model.queue.QueueTaskFuture
 import org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition
@@ -19,7 +19,7 @@ class LibraryResourceStepSpec extends Specification {
   def "libraryResource can load resources in library"() {
     given:
     final CpsFlowDefinition flow = new CpsFlowDefinition('''
-      final resource = libraryResource('com/mkobit/globallibraryresources/lorumipsum.txt')
+      final resource = libraryResource('com/swift/cisb/lorumipsum.txt')
       echo "Resource Text: $resource"
     '''.stripIndent(), true)
     final WorkflowJob workflowJob = rule.createProject(WorkflowJob, 'project')
